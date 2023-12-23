@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  db:
+    image: mysql:5.7
+    container_name: db
+    restart: always
+    environment:
+      MYSQL_DATABASE: ecostore
+      MYSQL_ROOT_PASSWORD: 123
+      MYSQL_PASSWORD: 123
+    ports:
+      - "3306:3306"
+    volumes:
+        - ./mysql:/var/lib/mysql

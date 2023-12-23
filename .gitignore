@@ -1,0 +1,7 @@
+/.idea
+/mysql
+
+# OS generated files #
+.DS_Store
+
+/target
